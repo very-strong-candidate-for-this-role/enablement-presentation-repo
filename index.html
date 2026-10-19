@@ -30,6 +30,17 @@
                 <span>Probability of Hiring Success:</span>
                 <span style="font-weight: bold; color: #3fb950;">100.0%</span>
             </div>
+            <!-- Inside the .card div, below metrics -->
+        <button onclick="triggerSuccess()" style="background-color: #238636; color: white; border: none; padding: 10px 16px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; margin-top: 10px;">Execute Final Merge</button>
+        <div id="message" style="margin-top: 15px; font-style: italic; color: #8b949e; text-align: center;"></div>
+    </div>
+    <script>
+        function triggerSuccess() {
+            const msg = document.getElementById('message');
+            msg.innerHTML = "🎉 SUCCESS: Production override accepted. Offer letter dispatched.";
+            msg.style.color = "#3fb950";
+        }
+    </script>
         }
         h1 { font-size: 20px; color: #58a6ff; margin-top: 0; }
     </style>
